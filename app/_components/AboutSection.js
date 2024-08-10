@@ -10,7 +10,7 @@ function AboutSection() {
   return (
     <div className=" bg-aboutS px-8 relative">
       <div className="flex  justify-center items-center py-16  m-auto">
-        <diV className="flex-1 relative">
+        <div className="flex-1 relative">
           <div className="flex justify-center items-center">
             <Image
               src={aboutImage}
@@ -26,8 +26,8 @@ function AboutSection() {
               title="ادارة ايجــــار العقارات طويلة وقصيرة المدي "
             />
           </div>
-        </diV>
-        <diV className="flex-1 flex flex-col items-end text-right ">
+        </div>
+        <div className="flex-1 flex flex-col items-end text-right ">
           <div className=" absolute top-7 right-1">
             <Image src={RightImage} alt="About Iamge" />
           </div>
@@ -49,7 +49,7 @@ function AboutSection() {
               </Link>
             </button>
           </div>
-        </diV>
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import Image from "next/image";
 import project1 from "@/public/pr1.svg";
 import project2 from "@/public/pr2.svg";
 import project3 from "@/public/pr3.svg";
+import Link from "next/link";
 
 function OurProjects() {
   return (
@@ -16,12 +17,18 @@ function OurProjects() {
       </p>
       <section className="grid grid-cols-2 gap-4 p-12 px-32">
         <div className="flex flex-col gap-y-4">
-          <Image src={project2} alt="project2" />
-          <Image src={project3} alt="project3" />
+          <Link href="/projects/misr">
+            <Image src={project2} alt="project2" />
+          </Link>
+          <Link href="/projects/england">
+            <Image src={project3} alt="project3" />
+          </Link>
         </div>
 
         <div className="">
-          <Image src={project1} alt="project1" />
+          <Link href="/projects/saudi">
+            <Image src={project1} alt="project1" />
+          </Link>
         </div>
       </section>
     </div>

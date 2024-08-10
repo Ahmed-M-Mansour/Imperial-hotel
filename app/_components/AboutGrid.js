@@ -10,7 +10,7 @@ function AboutGrid() {
   return (
     <div className=" bg-aboutS px-8 relative pt-24">
       <div className="grid lg:grid-cols-2  gap-y-8 py-16  m-auto">
-        <diV className="flex-1 relative">
+        <div className="flex-1 relative">
           <div className="flex justify-center items-center">
             <Image
               src={aboutImage}
@@ -26,8 +26,8 @@ function AboutGrid() {
               title="ادارة ايجــــار العقارات طويلة وقصيرة المدي دارة تأجير العقارات "
             />
           </div>
-        </diV>
-        <diV className="flex-1 flex flex-col items-end text-right ">
+        </div>
+        <div className="flex-1 flex flex-col items-end text-right ">
           <div className=" absolute top-1 right-1">
             <Image src={RightImage} alt="About Iamge" />
           </div>
@@ -51,7 +51,7 @@ function AboutGrid() {
               </Link>
             </button>
           </div>
-        </diV>
+        </div>
       </div>
     </div>
   );

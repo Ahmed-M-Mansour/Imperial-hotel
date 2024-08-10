@@ -9,13 +9,26 @@ import Services from "./_components/Services";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar
+        isHome={true}
+        isFullHeight={true}
+        bgClassName="home-bg"
+        desc="تعد شركة إمبريال هوست من أرقي الشـــــــركات علي مستــوي العالم العربي
+          التي تقدم خدمات ضيافة استثنائية لأصحاب العقارات والمسافرين"
+        title={[
+          <span className="text-gold" key={1}>
+            {" "}
+            إمبـريال هوست{" "}
+          </span>,
+          "للإرتقاء بخدمات الإيجار ",
+        ]}
+      />
       <AboutSection />
       <Services />
       <OurRate />
       <OurProjects />
-      <Contacts />
-      <Footer />
+      {/* <Contacts />
+      <Footer /> */}
     </>
   );
 }
