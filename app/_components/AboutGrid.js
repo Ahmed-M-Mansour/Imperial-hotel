@@ -46,7 +46,7 @@ function AboutGrid() {
           <div className="my-2">
             <button className="flex items-center  bg-gold rounded-3xl text-white px-8 py-3  font-bold text-xl almarai-extrabold">
               <Image src={leftArrow} alt="Arrow" width={24} height={24} />
-              <Link href="/contacts" className="pl-3">
+              <Link href="/Offer" className="pl-3">
                 عن شركتنا
               </Link>
             </button>

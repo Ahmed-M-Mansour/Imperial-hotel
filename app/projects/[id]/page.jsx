@@ -1,5 +1,6 @@
 import Navbar from "@/app/_components/Navbar";
 import Projects from "@/app/_components/Projects";
+import Offer from "@/app/_components/offer";
 import { data } from "@/constants";
 
 const page = ({ params: { id } }) => {
@@ -13,6 +14,7 @@ const page = ({ params: { id } }) => {
         desc={`الرئيســـية/${data[id].name}`}
       />
       <Projects projects={data[id]?.projects} id={id} />
+      <Offer />
     </>
   );
 };

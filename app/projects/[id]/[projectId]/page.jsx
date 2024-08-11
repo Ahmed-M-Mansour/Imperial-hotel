@@ -1,10 +1,11 @@
 import Navbar from "@/app/_components/Navbar";
 import Project from "@/app/_components/Project";
+import Offer from "@/app/_components/offer";
 import { data } from "@/constants";
 
 const page = ({ params: { id, projectId } }) => {
   const projectID = Number(projectId);
-  const project = data[id]?.projects.find(item => item['id'] === projectID);
+  const project = data[id]?.projects.find((item) => item["id"] === projectID);
   return (
     <>
       <Navbar
@@ -15,6 +16,7 @@ const page = ({ params: { id, projectId } }) => {
         desc={`الرئيسيه/${data[id].name}`}
       />
       <Project Project={project} />
+      <Offer />
     </>
   );
 };

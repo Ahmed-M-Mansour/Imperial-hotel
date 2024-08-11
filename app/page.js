@@ -1,6 +1,5 @@
 import AboutSection from "./_components/AboutSection";
-import Contacts from "./_components/Contacts";
-import Footer from "./_components/Footer";
+import Offer from "./_components/offer";
 import Navbar from "./_components/Navbar";
 import OurProjects from "./_components/OurProjects";
 import OurRate from "./_components/OurRate";
@@ -27,8 +26,7 @@ export default function Home() {
       <Services />
       <OurRate />
       <OurProjects />
-      {/* <Contacts />
-      <Footer /> */}
+      <Offer />
     </>
   );
 }
