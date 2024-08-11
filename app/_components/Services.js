@@ -40,7 +40,7 @@ function Services() {
           الخدمات التي نوفرها في إمبــــــــريال هوست
         </p>
       </header>
-      <section className="p-6   grid lg:grid-cols-5 md:grid-col-1">
+      <div className="p-6   grid lg:grid-cols-5 md:grid-col-1">
         <div className=" flex flex-col gap-6 lg:col-span-3 ">
           {services.map((service, index) => (
             <ServiceItem
@@ -59,7 +59,7 @@ function Services() {
             />
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

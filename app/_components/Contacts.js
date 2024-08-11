@@ -4,7 +4,7 @@ import leftArrow from "@/public/left-arrow.svg";
 
 function Contacts() {
   return (
-    <section className="p-6 contacts-bg flex justify-center items-center">
+    <div className="p-6 contacts-bg flex justify-center items-center">
       <div className="max-w-4xl text-center">
         <h2 className=" font-almarai font-extrabold text-2xl py-2">
           إختبار أداء وحدتك مجاناً (بقيمة 500 ريال سعودي)
@@ -68,7 +68,7 @@ function Contacts() {
           </div>
         </form>
       </div>
-    </section>
+    </div>
   );
 }
 

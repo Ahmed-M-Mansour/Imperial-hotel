@@ -15,7 +15,7 @@ function OurProjects() {
         {" "}
         نحن مـــــــــــوجودون في امــــاكن مختــــلفة
       </p>
-      <section className="grid grid-cols-2 gap-4 p-12 px-32">
+      <div className="grid grid-cols-2 gap-4 p-12 px-32">
         <div className="flex flex-col gap-y-4">
           <Link href="/projects/misr">
             <Image src={project2} alt="project2" />
@@ -30,7 +30,7 @@ function OurProjects() {
             <Image src={project1} alt="project1" />
           </Link>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

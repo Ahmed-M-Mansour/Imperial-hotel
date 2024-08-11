@@ -1,5 +1,5 @@
 import React from "react";
-import RateItem from "./rateItem";
+import RateItem from "./RateItem";
 import Icon1 from "@/public/rIcon1.svg";
 import Icon2 from "@/public/rIcon2.svg";
 import Icon3 from "@/public/rIcon3.svg";
@@ -17,7 +17,7 @@ function OurRate() {
         {" "}
         القيم كالمنارات - يرشدوننا من خلال إعطائنا الإتجاه والمعني والغرض
       </p>
-      <section className="grid grid-cols-5 p-12 gap-8">
+      <div className="grid grid-cols-5 p-12 gap-8">
         <RateItem
           icon={Icon5}
           title="النزاهة"
@@ -43,7 +43,7 @@ function OurRate() {
           title="المسؤولية"
           description="نتحمل مسؤوليتنا، نفي بالتزامتنا ونرحب بالمساءلة عن النتائج الناجمة"
         />
-      </section>
+      </div>
     </div>
   );
 }

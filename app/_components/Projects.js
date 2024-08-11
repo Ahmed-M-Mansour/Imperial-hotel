@@ -4,7 +4,7 @@ import Image from "next/image";
 const Projects = ({ projects }) => {
   return (
     <div className="mr-8 almarai rounded-tr-3xl flex flex-col justify-center items-center p-6 py-12">
-      <section className="grid grid-cols-2 gap-4 p-10 px-24">
+      <div className="grid grid-cols-2 gap-4 p-10 px-24">
         <div className="flex flex-col gap-y-4">
           {/* <Link href="/projects/misr">
             <Image src={project2} alt="project2" />
@@ -30,7 +30,7 @@ const Projects = ({ projects }) => {
             <Image src={projects[0].cover} alt={projects[0].name} width={600} height={300} />
           </Link>
         </div>
-      </section>
+      </div>
     </div>
     // <div>1</div>
   );
