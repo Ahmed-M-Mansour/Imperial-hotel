@@ -32,9 +32,9 @@ const links = [
 const Navbar = ({ isHome, isFullHeight, bgClassName, title, desc }) => {
   const pathname = usePathname();
   return (
-    <nav className={`p-6 almarai relative hidden lg:block ${bgClassName}`}>
-      <div className="flex items-center justify-around">
-        <button className="flex items-center  bg-gold rounded-3xl text-white px-8 py-3 text-sm almarai-extrabold">
+    <nav className={`p-6 almarai relative ${bgClassName}`}>
+      <div className="flex flex-col-reverse sm:flex-row items-center justify-around">
+        <button className="hidden sm:flex items-center bg-gold rounded-3xl text-white px-8 py-3 text-sm almarai-extrabold">
           <Link href="/contacts">تواصل معنا</Link>
         </button>
         <div className="flex space-x-10">

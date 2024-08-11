@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Projects = ({ projects }) => {
+const Projects = ({ projects, id }) => {
   return (
     <div className="mr-8 almarai rounded-tr-3xl flex flex-col justify-center items-center p-6 py-12">
       <div className="grid grid-cols-2 gap-4 p-10 px-24">
@@ -17,8 +17,8 @@ const Projects = ({ projects }) => {
               return;
             } else {
               return (
-                <Link href={`"/projects/misr/${item.name}`} key={index}>
-                  <Image src={item.cover} alt={item.name} />
+                <Link href={`/projects/${id}/${item.id}`} key={index}>
+                  <Image src={item.cover} alt={item.id} />
                 </Link>
               );
             }
@@ -26,7 +26,7 @@ const Projects = ({ projects }) => {
         </div>
 
         <div className="">
-          <Link href={`/projects/saudi/${projects[0].name}`}>
+          <Link href={`/projects/saudi/${projects[0].id}`}>
             <Image src={projects[0].cover} alt={projects[0].name} width={600} height={300} />
           </Link>
         </div>

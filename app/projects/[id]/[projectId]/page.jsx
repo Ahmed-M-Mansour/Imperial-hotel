@@ -1,21 +1,22 @@
 import Navbar from "@/app/_components/Navbar";
+import Project from "@/app/_components/Project";
 import { data } from "@/constants";
 
 const page = ({ params: { id, projectId } }) => {
-  const projectName = decodeURIComponent(projectId);
-  const project = data[id].projects.find((item) => item.name === projectName);
-
+  const projectID = Number(projectId);
+  const project = data[id]?.projects.find(item => item['id'] === projectID);
   return (
     <>
-        <Navbar 
-            isHome={false}
-            isFullHeight={false}
-            bgClassName="badrany-bg"
-            title={`مشاريع ${data[id].name}`}
-            desc={`الرئيسيه/${data[id].name}`}
-        />
+      <Navbar
+        isHome={false}
+        isFullHeight={false}
+        bgClassName="badrany-bg"
+        title={project.name}
+        desc={`الرئيسيه/${data[id].name}`}
+      />
+      <Project Project={project} />
     </>
-  )
-}
+  );
+};
 
 export default page;
