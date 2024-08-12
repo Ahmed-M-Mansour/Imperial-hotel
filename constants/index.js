@@ -5,6 +5,44 @@ import badrany1 from '@/public/badrany1.svg';
 import badrany2 from '@/public/badrany2.svg'
 import badrany3 from '@/public/badrany3.svg'
 import badrany4 from '@/public/badrany4.svg'
+import Member1 from "@/public/member1.svg";
+import Member2 from "@/public/member2.svg";
+import Member3 from "@/public/member3.svg";
+import Member4 from "@/public/member4.svg";
+
+const Members = [
+  {
+    id: 0,
+    Image: Member1,
+    name: "سعــــــــد عادل",
+    type: "مدير الحساب",
+  },
+  {
+    id: 1,
+    Image: Member2,
+    name: "مـــــــهاب إمام",
+    type: "إدارة الأربـــاح",
+  },
+  {
+    id: 2,
+    Image: Member3,
+    name: "محمـــد الصـــاوي ",
+    type: "مدير خدمة العملاء",
+  },
+  {
+    id: 3,
+    Image: Member3,
+    name: "محمـــد الصـــاوي",
+    type: "مدير خدمة العملاء",
+  },
+  {
+    id: 4,
+    Image: Member4,
+    name: "فتحـــــــــــي الصـــاوي",
+    type: "المدير التنفيذي",
+  },
+];
+
 
 const data = {
   saudi: {
@@ -191,4 +229,4 @@ const data = {
   },
 };
 
-export { data };
+export { data, Members };

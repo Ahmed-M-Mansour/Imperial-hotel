@@ -6,7 +6,7 @@ function Offer() {
   return (
     <div className="p-6 contacts-bg flex justify-center items-center">
       <div className="max-w-4xl text-center">
-        <h2 className=" font-almarai font-extrabold text-2xl py-2">
+        <h2 className=" font-almarai almarai-extrabold text-2xl py-2">
           إختبار أداء وحدتك مجاناً (بقيمة 500 ريال سعودي)
         </h2>
         <p className=" font-almarai font-normal text-sm w-3/4 mx-auto leading-6 mb-4">
@@ -55,7 +55,7 @@ function Offer() {
             />
           </div>
           <div className="flex justify-center items-center my-6">
-            <button className="flex justify-center items-center  bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai font-extrabold w-40">
+            <button className="flex justify-center items-center  bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai almarai-extrabold w-40">
               <Image
                 className="pt-2 mx-2"
                 src={leftArrow}

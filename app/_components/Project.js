@@ -8,7 +8,7 @@ const Project = ({ Project }) => {
         direction: "rtl",
       }}
     >
-      <h1 className="font-extrabold text-3xl">{Project.name}</h1>
+      <h1 className="almarai-extrabold text-3xl">{Project.name}</h1>
       <p className="text-[#42526E]">{Project.description1}</p>
       <ImageCarousel images={Project.images} />
       <p className="text-[#42526E]">{Project.description2}</p>
@@ -18,7 +18,7 @@ const Project = ({ Project }) => {
           <ul className="list-disc">
             {Project.features.map((text, index) => (
               <li key={index} className="text-[#42526E]">
-                {index+1}-{text}
+                {index + 1}-{text}
               </li>
             ))}
           </ul>

@@ -33,7 +33,7 @@ const ImageCarousel = ({ images }) => {
       ) : (
         <Slider {...settings}>
           {images.map((url, index) => (
-            <div key={index}>
+            <div key={index} className="flex items-center justify-center">
               <Image
                 src={url}
                 alt={`Project Image ${index}`}

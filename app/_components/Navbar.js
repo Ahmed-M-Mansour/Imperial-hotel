@@ -43,7 +43,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, title, desc }) => {
               href={path}
               key={id}
               className={`text-white hover:text-gray-400 text-lg ${
-                pathname.includes(path) ? "font-extrabold" : "font-medium"
+                pathname.includes(path) ? "almarai-extrabold" : "font-medium"
               }`}
             >
               {text}

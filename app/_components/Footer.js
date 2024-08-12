@@ -16,14 +16,14 @@ function Footer() {
       </div>
       <div className="col-span-4">
         <div className="flex flex-col text-right px-3">
-          <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
+          <h3 className=" font-almarai almarai-extrabold text-lg leading-10 text-text1">
             يشترك
           </h3>
           <h6 className=" font-almarai font-normal text-sm text-color4">
             انضم إلى مجتمعنا لتلقي التحديثات
           </h6>
           <div className="flex justify-end items-center space-x-3 my-3">
-            <button className="flex justify-center items-center  bg-gold rounded-3xl text-white px-6 py-2 text-lg font-almarai font-extrabold ">
+            <button className="flex justify-center items-center  bg-gold rounded-3xl text-white px-6 py-2 text-lg font-almarai almarai-extrabold ">
               <Link href="/contacts"> اشتراك </Link>
             </button>
             <input
@@ -40,7 +40,7 @@ function Footer() {
       <div className="col-span-4">
         <div className="flex  justify-around w-full">
           <div className="flex flex-col text-right">
-            <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
+            <h3 className=" font-almarai almarai-extrabold text-lg leading-10 text-text1">
               {" "}
               المشاريع المتاحة{" "}
             </h3>
@@ -58,7 +58,7 @@ function Footer() {
             </h6>
           </div>
           <div className="flex flex-col text-right">
-            <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
+            <h3 className=" font-almarai almarai-extrabold text-lg leading-10 text-text1">
               روابط مفيدة{" "}
             </h3>
             <h6 className=" font-almarai font-normal text-sm text-text2">

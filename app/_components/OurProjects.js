@@ -11,7 +11,7 @@ function OurProjects() {
         {" "}
         مشاريعنا{" "}
       </h1>
-      <p className=" font-almarai font-extrabold text-xl leading-10 py-2">
+      <p className=" font-almarai almarai-extrabold text-xl leading-10 py-2">
         {" "}
         نحن مـــــــــــوجودون في امــــاكن مختــــلفة
       </p>
