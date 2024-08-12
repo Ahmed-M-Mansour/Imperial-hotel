@@ -10,9 +10,9 @@ const Team = () => {
           فريـــــــــــق امبيــــــريال هوســــــت
         </h3>
       </div>
-      <div className="flex items-center justify-center gap-6 w-full flex-nowrap">
-        {Members.map((item) => {
-          <div key={item.id} className="flex flex-col gap-3 p-3">
+      <div className="grid grid-cols-4 p-12 gap-6">
+        {Members.map((item) => (
+          <div key={item.id} className="flex flex-col gap-3 p-3 rounded-xl shadow-xl">
             <Image
               src={item.Image}
               alt={`Member ${item.id + 1} Image`}
@@ -29,8 +29,8 @@ const Team = () => {
                 {item.type}
               </h6>
             </div>
-          </div>;
-        })}
+          </div>
+        ))}
       </div>
     </div>
   );
