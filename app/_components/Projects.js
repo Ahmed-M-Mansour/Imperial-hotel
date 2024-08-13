@@ -26,7 +26,7 @@ const Projects = ({ projects, id }) => {
         </div>
 
         <div className="">
-          <Link href={`/projects/saudi/${projects[0].id}`}>
+          <Link href={`/projects/${id}/${projects[0].id}`}>
             <Image src={projects[0].cover} alt={projects[0].name} width={600} height={300} />
           </Link>
         </div>

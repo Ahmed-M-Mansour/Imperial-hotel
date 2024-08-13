@@ -29,10 +29,25 @@ const links = [
   },
 ];
 
-const Navbar = ({ isHome, isFullHeight, bgClassName, title, desc }) => {
+const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
   const pathname = usePathname();
   return (
-    <nav className={`p-6 almarai relative ${bgClassName}`}>
+    <nav
+      className={`p-6 almarai relative ${
+        bgClassName && bgClassName
+      } bg-cover bg-center bg-no-repeat ${
+        isFullHeight ? "h-full" : "h-[300px]"
+      }`}
+      style={{
+        background:
+          bgUrl &&
+          `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgUrl})`,
+        height: isFullHeight ? "100%" : "300px",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="flex flex-col-reverse sm:flex-row items-center justify-around">
         <button className="hidden sm:flex items-center bg-gold rounded-3xl text-white px-8 py-3 text-sm almarai-extrabold">
           <Link href="/contacts">تواصل معنا</Link>

@@ -9,9 +9,9 @@ const page = ({ params: { id } }) => {
       <Navbar
         isHome={false}
         isFullHeight={false}
-        bgClassName="saudi-bg"
-        title={` مشاريع ${data[id].name}`}
-        desc={`الرئيســـية/${data[id].name}`}
+        bgClassName={`${id}-bg`}
+        title={` مشاريع ${data[id]?.name}`}
+        desc={`الرئيســـية/${data[id]?.name}`}
       />
       <Projects projects={data[id]?.projects} id={id} />
       <Offer />

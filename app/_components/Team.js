@@ -12,7 +12,10 @@ const Team = () => {
       </div>
       <div className="grid grid-cols-4 p-12 gap-6">
         {Members.map((item) => (
-          <div key={item.id} className="flex flex-col gap-3 p-3 rounded-xl shadow-xl">
+          <div
+            key={item.id}
+            className="flex flex-col gap-3 p-3 rounded-xl shadow-xl"
+          >
             <Image
               src={item.Image}
               alt={`Member ${item.id + 1} Image`}
@@ -22,10 +25,10 @@ const Team = () => {
             />
 
             <div className="flex flex-col items-center justify-center text-center gap-2">
-              <h4 className="almarai-extrabold text-base text-[#172B4D]">
+              <h4 className="almarai-extrabold text-base text-text1">
                 {item.name}
               </h4>
-              <h6 className="text-[#42526E] text-xs almarai-regular">
+              <h6 className="text-text2 text-xs almarai-regular">
                 {item.type}
               </h6>
             </div>

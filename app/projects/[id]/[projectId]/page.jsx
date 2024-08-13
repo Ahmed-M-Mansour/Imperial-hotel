@@ -11,7 +11,7 @@ const page = ({ params: { id, projectId } }) => {
       <Navbar
         isHome={false}
         isFullHeight={false}
-        bgClassName="badrany-bg"
+        bgUrl={project.coverUrl}
         title={project.name}
         desc={`الرئيسيه/${data[id].name}`}
       />

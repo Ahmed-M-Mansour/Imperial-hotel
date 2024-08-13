@@ -9,10 +9,8 @@ const Contacts = () => {
       style={{ direction: "rtl" }}
     >
       <div className="flex flex-col p-6 gap-6 bg-white">
-        <h1 className="text-[#172B4D] almarai-extrabold text-3xl">
-          تواصل معنا
-        </h1>
-        <p className="text-[#42526E] font-normal text-sm">
+        <h1 className="text-text1 almarai-extrabold text-3xl">تواصل معنا</h1>
+        <p className="text-text2 font-normal text-sm">
           يرجى ترك معلوماتك لنا، حتى نتمكن من بدء محادثتنا لتزويدك بمزيد من
           المعلومات
         </p>

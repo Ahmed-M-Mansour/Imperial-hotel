@@ -4,6 +4,7 @@ import AboutGrid from "../_components/AboutGrid";
 import Navbar from "../_components/Navbar";
 import Offer from "../_components/offer";
 import Team from "../_components/Team";
+import Testimonials from "../_components/Testimonials";
 
 function AboutUs() {
   return (
@@ -19,6 +20,7 @@ function AboutUs() {
       <Services />
       <OurRate />
       <Team />
+      <Testimonials />
       <Offer />
     </>
   );
