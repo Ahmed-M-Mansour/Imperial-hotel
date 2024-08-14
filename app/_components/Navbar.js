@@ -42,7 +42,6 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
         background:
           bgUrl &&
           `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgUrl})`,
-        height: isFullHeight ? "100%" : "300px",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
