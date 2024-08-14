@@ -4,10 +4,25 @@ import { useState } from "react";
 import Image from "next/image";
 import { testimonials } from "@/constants";
 import Quotes from "@/public/quotes.svg";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 const Testimonials = () => {
   const [slide, setSlide] = useState(0);
-  const testimonialsPerSlide = 3;
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
+  const isLargeDevice = useMediaQuery(theme.breakpoints.up("md"));
+
+  let testimonialsPerSlide;
+  if (isMobile) {
+    testimonialsPerSlide = 1;
+  } else if (isTablet) {
+    testimonialsPerSlide = 2;
+  } else {
+    testimonialsPerSlide = 3;
+  }
+
   const totalSlides = Math.ceil(testimonials.length / testimonialsPerSlide);
 
   const nextSlide = () => {
@@ -30,7 +45,11 @@ const Testimonials = () => {
         </h2>
       </div>
       <div className="relative w-full">
-        <div className="grid grid-cols-3 p-12 gap-8">
+        <div
+          className={`grid p-6 sm:p-12 gap-4 sm:gap-8 ${
+            isMobile ? "grid-cols-1" : isTablet ? "grid-cols-2" : "grid-cols-3"
+          }`}
+        >
           {testimonials
             .slice(
               slide * testimonialsPerSlide,
@@ -39,28 +58,29 @@ const Testimonials = () => {
             .map(({ text, user }, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center p-6 rounded-[12.8px] bg-white gap-3 h-full"
+                className="flex flex-col justify-center items-center p-4 sm:p-6 rounded-[12.8px] bg-white gap-3 w-full"
               >
-                <div className="flex justify-between gap-20 items-center">
+                <div className="flex justify-between gap-10 sm:gap-20 items-center">
                   <div className="flex gap-4">
                     <Image
                       src={user.image}
                       alt={`${user.name}'s Image`}
                       width={40}
                       height={40}
+                      className="rounded-full"
                     />
                     <div className="flex flex-col items-center gap-1">
-                      <h4 className="text-text1 almarai-extrabold text-base">
+                      <h4 className="text-text1 almarai-extrabold text-xs sm:text-base">
                         {user.name}
                       </h4>
-                      <h6 className="text-text2 almarai-regular text-xs">
+                      <h6 className="text-text2 almarai-regular text-[8px] sm:text-xs">
                         {user.type}
                       </h6>
                     </div>
                   </div>
-                  <Image src={Quotes} alt="Quotes" width={50} height={50} />
+                  <Image src={Quotes} alt="Quotes" width={40} height={40} />
                 </div>
-                <p className="text-text2 almarai-regular text-base w-[300px]">
+                <p className="text-text2 almarai-regular text-xs sm:text-base w-full">
                   {text}
                 </p>
               </div>
@@ -71,7 +91,7 @@ const Testimonials = () => {
             <div
               key={index}
               className={`h-2 w-8 rounded-full cursor-pointer transition-all ${
-                slide === index ? "bg-gold w-12" : "bg-gray-300"
+                slide === index ? "bg-gold w-16" : "bg-gray-300"
               }`}
               onClick={() => setSlide(index)}
             ></div>

@@ -36,12 +36,12 @@ function Services() {
     <div className="flex flex-col items-center justify-center p-12">
       <header className="bg-white text-black font-bold text-2xl p-4 text-center my-4">
         <h1 className="text-2xl text-gold almarai-bold">خدماتنا</h1>
-        <p className="text-xl leading-10 text-aboutTitle almarai-extrabold">
+        <p className="text-lg sm:text-xl leading-10 text-aboutTitle almarai-extrabold">
           الخدمات التي نوفرها في إمبــــــــريال هوست
         </p>
       </header>
-      <div className="p-6   grid lg:grid-cols-5 md:grid-col-1">
-        <div className=" flex flex-col gap-6 lg:col-span-3 ">
+      <div className="p-6 w-full grid lg:grid-cols-5 md:grid-col-1">
+        <div className="flex flex-col gap-6 lg:col-span-3 ">
           {services.map((service, index) => (
             <ServiceItem
               key={index}
@@ -50,7 +50,7 @@ function Services() {
             />
           ))}
         </div>
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 hidden sm:block">
           <div className="">
             <Image
               src={servicesImage}

@@ -4,17 +4,17 @@ import { Members } from "@/constants";
 const Team = () => {
   return (
     <div className="almarai bg-white p-10 flex flex-col items-center justify-center gap-5">
-      <div className="flex flex-col gap-2 items-center justify-center">
+      <div className="flex flex-col gap-2 items-center justify-center text-center">
         <h2 className="almarai-bold text-gold text-2xl">الفريق</h2>
         <h3 className="almarai-extrabold text-[#1A1313]">
           فريـــــــــــق امبيــــــريال هوســــــت
         </h3>
       </div>
-      <div className="grid grid-cols-4 p-12 gap-6">
+      <div className="sm:grid flex sm:grid-cols-4 flex-col items-center justify-center p-12 gap-6">
         {Members.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col gap-3 p-3 rounded-xl shadow-xl"
+            className="flex flex-col gap-1 sm:gap-3 items-center justify-center p-3 rounded-xl shadow-xl"
           >
             <Image
               src={item.Image}

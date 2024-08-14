@@ -1,8 +1,44 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import leftArrow from "@/public/left-arrow.svg";
 
 const Contacts = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    email: "",
+    companyName: "",
+    message: "",
+  });
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch("/api/sendWhatsAppMessage", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setError("Sent Successfully!")
+    } else {
+      <div>Failed</div>
+    }
+  };
+
   return (
     <div
       className="flex almarai flex-col text-right items-center justify-center gap-4 p-12 bg-[#FCFCFC]"
@@ -15,41 +51,62 @@ const Contacts = () => {
           المعلومات
         </p>
         <div className="max-w-4xl text-center flex flex-col items-center justify-center">
-          <form className="flex flex-col items-start">
+          <form className="flex flex-col items-start" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-5 p-6 items-center justify-center w-[800px]">
               <div className="flex gap-[18px] items-center justify-center w-full">
                 <input
                   type="text"
+                  name="fullName"
                   placeholder="أدخل الاسم الكامل"
                   className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  onChange={handleChange}
+                  value={formData.fullName}
+                  required
                 />
                 <input
                   type="text"
+                  name="phoneNumber"
                   placeholder="رقم الهاتف"
                   className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  onChange={handleChange}
+                  value={formData.phoneNumber}
+                  required
                 />
               </div>
               <div className="flex gap-[18px] items-center justify-center w-full">
                 <input
-                  type="text"
+                  type="email"
+                  name="email"
                   placeholder="البريد الالكتروني"
                   className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  onChange={handleChange}
+                  value={formData.email}
+                  required
                 />
                 <input
                   type="text"
+                  name="companyName"
                   placeholder="اسم الشركة"
                   className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  onChange={handleChange}
+                  value={formData.companyName}
                 />
               </div>
               <textarea
+                name="message"
                 className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-48"
                 rows={30}
                 cols={20}
                 placeholder="اترك رسالتك"
+                onChange={handleChange}
+                value={formData.message}
               />
             </div>
             <div className="flex justify-center items-center my-6">
-              <button className="flex justify-center items-center bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai almarai-extrabold w-40">
+              <button
+                type="submit"
+                className="flex justify-center items-center bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai almarai-extrabold w-40"
+              >
                 <Image
                   className="pt-2 mx-2"
                   src={leftArrow}
@@ -57,7 +114,7 @@ const Contacts = () => {
                   width={24}
                   height={24}
                 />
-                <Link href="/contacts"> ارسال </Link>
+                ارسال
               </button>
             </div>
           </form>
@@ -66,11 +123,5 @@ const Contacts = () => {
     </div>
   );
 };
-
-// const Input = ({ placeholder }) => {
-//     return (
-//         <input type="text" placeholder={placeholder} />
-//     )
-// }
 
 export default Contacts;

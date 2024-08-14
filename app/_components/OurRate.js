@@ -8,7 +8,7 @@ import Icon5 from "@/public/rIcon5.svg";
 
 function OurRate() {
   return (
-    <div className="bg-aboutS mr-8 rounded-tr-3xl flex flex-col justify-center items-center p-6 py-12">
+    <div className="bg-aboutS mr-8 rounded-tr-3xl w-full flex flex-col text-center justify-center items-center p-6 py-12">
       <h1 className="text-gold font-almarai text-2xl leading-8 font-bold">
         {" "}
         قيــــــــمنا{" "}
@@ -17,7 +17,7 @@ function OurRate() {
         {" "}
         القيم كالمنارات - يرشدوننا من خلال إعطائنا الإتجاه والمعني والغرض
       </p>
-      <div className="grid grid-cols-5 p-12 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-5 p-12 gap-8">
         <RateItem
           icon={Icon5}
           title="النزاهة"

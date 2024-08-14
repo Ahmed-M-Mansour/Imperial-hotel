@@ -8,10 +8,10 @@ import stateIcon3 from "@/public/navstate3.svg";
 
 function AboutSection() {
   return (
-    <div className=" bg-aboutS px-8 relative">
-      <div className="flex  justify-center items-center py-16  m-auto">
-        <div className="flex-1 relative">
-          <div className="flex justify-center items-center">
+    <div className="bg-aboutS px-8 relative">
+      <div className="flex justify-center items-center text-center py-16 m-auto">
+        <div className="sm:flex flex-1 hidden relative">
+          <div className="hidden sm:flex justify-center items-center">
             <Image
               src={aboutImage}
               alt="About Iamge"
@@ -19,7 +19,7 @@ function AboutSection() {
               height={477}
             />
           </div>
-          <div className=" absolute top-2/3 right-0 shadow-lg w-96">
+          <div className="absolute hidden sm:block top-2/3 right-0 shadow-lg w-96">
             <NavStatistic
               icon={stateIcon3}
               number="إدارة تأجير العقارات "
@@ -27,12 +27,12 @@ function AboutSection() {
             />
           </div>
         </div>
-        <div className="flex-1 flex flex-col items-end text-right ">
-          <div className=" absolute top-7 right-1">
+        <div className="flex-1 flex flex-col items-end text-center sm:text-right">
+          <div className="absolute top-7 right-1">
             <Image src={RightImage} alt="About Iamge" />
           </div>
-          <h1 className="text-2xl text-gold almarai-bold">مـن نــحن</h1>
-          <h2 className="text-3xl text-aboutTitle   almarai-extrabold">
+          <h1 className="text-2xl text-gold almarai-bold w-full">مـن نــحن</h1>
+          <h2 className="text-3xl text-aboutTitle w-full almarai-extrabold">
             عن شركة إمبــــريال هوست لخدمات الإيجار
           </h2>
           <p className=" text-lg leading-10 my-3 almarai-regular">
@@ -41,7 +41,7 @@ function AboutSection() {
             هي حكاية ارث لافت ومثير يمتد لأكثر من 7 سنوات، وفي قلب مصر الدولة
             التي اشتهرت بقطاعها السياحي الجاذب، تمت رعاية رحلتنا في مجال الضيافة
           </p>
-          <div className="my-2">
+          <div className="my-2 w-full sm:w-fit sm:block flex items-center justify-center">
             <button className="flex items-center  bg-gold rounded-3xl text-white px-8 py-3  font-bold text-xl almarai-extrabold">
               <Image src={leftArrow} alt="Arrow" width={24} height={24} />
               <Link href="/contacts" className="pl-3">

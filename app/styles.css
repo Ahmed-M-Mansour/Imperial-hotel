@@ -229,10 +229,12 @@
   background-repeat: no-repeat;
   width: 55%;
 }
-.contacts-bg {
+
+/* .contacts-bg {
   background-image: url("../public/bg-contacts.svg");
   min-height: 50vh;
+  min-width: 50vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */

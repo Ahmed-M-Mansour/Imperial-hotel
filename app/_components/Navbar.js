@@ -39,7 +39,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
       className={`p-6 almarai relative ${
         bgClassName && bgClassName
       } bg-cover bg-center bg-no-repeat ${
-        isFullHeight ? "h-full" : "h-[300px]"
+        isFullHeight ? "h-full" : "h-[400px]"
       }`}
       style={{
         background:
