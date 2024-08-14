@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useTheme, useMediaQuery } from "@mui/material";
 
 import Logo from "@/public/logo.svg";
 import Image from "next/image";
@@ -30,6 +31,8 @@ const links = [
 ];
 
 const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
+  const theme = useTheme();
+  const lgScreen = useMediaQuery(theme.breakpoints.up("lg"));
   const pathname = usePathname();
   return (
     <nav
@@ -51,7 +54,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
         <button className="hidden sm:flex items-center bg-gold rounded-3xl text-white px-8 py-3 text-sm almarai-extrabold">
           <Link href="/contacts">تواصل معنا</Link>
         </button>
-        <div className="flex space-x-10">
+        <div className="flex space-x-8 sm:space-x-10">
           {links.map(({ id, text, path }) => (
             <Link
               href={path}
@@ -69,11 +72,11 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
         </>
       </div>
       <div
-        className={`flex justify-center items-center flex-col ${
+        className={`flex justify-center items-center text-center flex-col ${
           isFullHeight ? "h-full" : "h-[300px]"
         }`}
       >
-        <h1 className=" text-white almarai font-bold text-5xl almarai-extrabold">
+        <h1 className=" text-white almarai font-bold text-4xl sm:text-5xl almarai-extrabold">
           {title}
         </h1>
         <p className=" text-[#E1E1E1] font-normal text-sm text-center p-2 my-1 max-w-lg almarai-regular">
@@ -86,7 +89,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
           </button>
         )}
       </div>
-      {isHome && (
+      {isHome && lgScreen && (
         <div className=" absolute bottom-0 right-0  w-1/2 h-28 home-bg-bottom ">
           <div className="flex pl-4 justify-around items-center w-full h-full">
             <NavStatistic
