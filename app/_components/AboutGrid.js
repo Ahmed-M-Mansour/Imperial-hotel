@@ -8,9 +8,9 @@ import stateIcon3 from "@/public/navstate3.svg";
 
 function AboutGrid() {
   return (
-    <div className=" bg-aboutS px-8 relative pt-24">
-      <div className="grid lg:grid-cols-2  gap-y-8 py-16  m-auto">
-        <div className="flex-1 relative">
+    <div className="bg-aboutS px-8 relative pt-24">
+      <div className="grid lg:grid-cols-2 gap-y-8 py-16 m-auto">
+        <div className="flex-1 relative sm:flex hidden">
           <div className="flex justify-center items-center">
             <Image
               src={aboutImage}

@@ -33,14 +33,14 @@ const services = [
 
 function Services() {
   return (
-    <div className="flex flex-col items-center justify-center p-12">
+    <div className="flex flex-col items-center justify-center p-6 sm:p-12">
       <header className="bg-white text-black font-bold text-2xl p-4 text-center my-4">
         <h1 className="text-2xl text-gold almarai-bold">خدماتنا</h1>
         <p className="text-lg sm:text-xl leading-10 text-aboutTitle almarai-extrabold">
           الخدمات التي نوفرها في إمبــــــــريال هوست
         </p>
       </header>
-      <div className="p-6 w-full grid lg:grid-cols-5 md:grid-col-1">
+      <div className="p-0 sm:p-6 w-full grid lg:grid-cols-5 md:grid-col-1">
         <div className="flex flex-col gap-6 lg:col-span-3 ">
           {services.map((service, index) => (
             <ServiceItem

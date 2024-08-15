@@ -35,7 +35,7 @@ function AboutSection() {
           <h2 className="text-3xl text-aboutTitle w-full almarai-extrabold">
             عن شركة إمبــــريال هوست لخدمات الإيجار
           </h2>
-          <p className=" text-lg leading-10 my-3 almarai-regular">
+          <p className="text-base sm:text-lg text-right leading-10 my-3 almarai-regular">
             شركتنا إمبــــريال هوست شركة رائدة في إدارة العقارات، اذ نتخصص في
             تأجير مرافق الضيافة قصيرة الأجل وطويلة الأجل عبر الأسواق الإقليمية.
             هي حكاية ارث لافت ومثير يمتد لأكثر من 7 سنوات، وفي قلب مصر الدولة

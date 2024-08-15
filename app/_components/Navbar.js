@@ -39,7 +39,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
       className={`p-6 almarai relative ${
         bgClassName && bgClassName
       } bg-cover bg-center bg-no-repeat ${
-        isFullHeight ? "h-full" : "h-[400px]"
+        isFullHeight ? "h-full" : "h-[450px]"
       }`}
       style={{
         background:
@@ -60,7 +60,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
               href={path}
               key={id}
               className={`text-white hover:text-gray-400 text-lg ${
-                pathname.includes(path) ? "almarai-extrabold" : "font-medium"
+                path === pathname ? "almarai-extrabold" : "font-medium"
               }`}
             >
               {text}
@@ -76,10 +76,10 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
           isFullHeight ? "h-full" : "h-[300px]"
         } ${!isHome && "pb-9"}`}
       >
-        <h1 className=" text-white almarai font-bold text-4xl sm:text-5xl almarai-extrabold">
+        <h1 className="text-white almarai font-bold text-3xl sm:text-5xl almarai-extrabold">
           {title}
         </h1>
-        <p className=" text-[#E1E1E1] font-normal text-sm text-center p-2 my-1 max-w-lg almarai-regular">
+        <p className="text-[#E1E1E1] font-normal text-sm text-center p-2 my-1 max-w-lg almarai-regular">
           {desc}
         </p>
         {isHome && (

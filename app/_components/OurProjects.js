@@ -11,8 +11,6 @@ function OurProjects() {
   const theme = useTheme();
   const lgScreen = useMediaQuery(theme.breakpoints.up("lg"));
 
-  console.log(lgScreen);
-
   return (
     <div className="mr-8 rounded-tr-3xl flex flex-col text-center justify-center items-center w-full p-6 py-12">
       <h1 className="text-gold font-almarai text-2xl leading-8 font-bold">
@@ -55,7 +53,7 @@ function OurProjects() {
             <Image
               src={project2}
               alt="project2"
-              className="w-[250px]"
+              className="w-[600px] h-auto"
               width={600}
               height={302.221}
             />
@@ -64,7 +62,7 @@ function OurProjects() {
             <Image
               src={project3}
               alt="project3"
-              className="w-[250px]"
+              className="w-[600px] h-auto"
               width={600}
               height={302.221}
             />
