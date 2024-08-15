@@ -54,7 +54,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
         <button className="hidden sm:flex items-center bg-gold rounded-3xl text-white px-8 py-3 text-sm almarai-extrabold">
           <Link href="/contacts">تواصل معنا</Link>
         </button>
-        <div className="flex space-x-8 sm:space-x-10">
+        <div className="flex space-x-7 sm:space-x-10">
           {links.map(({ id, text, path }) => (
             <Link
               href={path}
@@ -74,7 +74,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
       <div
         className={`flex justify-center items-center text-center flex-col ${
           isFullHeight ? "h-full" : "h-[300px]"
-        }`}
+        } ${!isHome && "pb-9"}`}
       >
         <h1 className=" text-white almarai font-bold text-4xl sm:text-5xl almarai-extrabold">
           {title}

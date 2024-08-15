@@ -2,7 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTheme, useMediaQuery } from '@mui/material'
+
 import leftArrow from "@/public/left-arrow.svg";
+import headerBack from "@/public/header back.svg";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +16,8 @@ const Contacts = () => {
     message: "",
   });
   const [error, setError] = useState("");
+  const theme = useTheme()
+  const lgScreen = useMediaQuery(theme.breakpoints.up('lg'))
 
   const handleChange = (e) => {
     setFormData({
@@ -41,10 +46,10 @@ const Contacts = () => {
 
   return (
     <div
-      className="flex almarai flex-col text-right items-center justify-center gap-4 p-12 bg-[#FCFCFC]"
+      className="relative flex almarai flex-col text-right items-center justify-center gap-4 p-0 sm:p-12 pt-0 bg-[#FCFCFC]"
       style={{ direction: "rtl" }}
     >
-      <div className="flex flex-col p-6 gap-6 bg-white">
+      <div className="flex flex-col p-11 gap-6 w-full bg-white">
         <h1 className="text-text1 almarai-extrabold text-3xl">تواصل معنا</h1>
         <p className="text-text2 font-normal text-sm">
           يرجى ترك معلوماتك لنا، حتى نتمكن من بدء محادثتنا لتزويدك بمزيد من
@@ -53,12 +58,12 @@ const Contacts = () => {
         <div className="max-w-4xl text-center flex flex-col items-center justify-center">
           <form className="flex flex-col items-start" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-5 p-6 items-center justify-center w-[800px]">
-              <div className="flex gap-[18px] items-center justify-center w-full">
+              <div className="flex flex-col sm:flex-row gap-[18px] items-center justify-center w-full">
                 <input
                   type="text"
                   name="fullName"
                   placeholder="أدخل الاسم الكامل"
-                  className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-12"
                   onChange={handleChange}
                   value={formData.fullName}
                   required
@@ -67,18 +72,18 @@ const Contacts = () => {
                   type="text"
                   name="phoneNumber"
                   placeholder="رقم الهاتف"
-                  className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-12"
                   onChange={handleChange}
                   value={formData.phoneNumber}
                   required
                 />
               </div>
-              <div className="flex gap-[18px] items-center justify-center w-full">
+              <div className="flex flex-col sm:flex-row gap-[18px] items-center justify-center w-full">
                 <input
                   type="email"
                   name="email"
                   placeholder="البريد الالكتروني"
-                  className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-12"
                   onChange={handleChange}
                   value={formData.email}
                   required
@@ -87,14 +92,14 @@ const Contacts = () => {
                   type="text"
                   name="companyName"
                   placeholder="اسم الشركة"
-                  className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-12"
+                  className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-12"
                   onChange={handleChange}
                   value={formData.companyName}
                 />
               </div>
               <textarea
                 name="message"
-                className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-full h-48"
+                className="bg-[#FBFBFB] border-[#BBC1CE] border-[1px] focus:border-gold resize-none rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-48"
                 rows={30}
                 cols={20}
                 placeholder="اترك رسالتك"
@@ -102,11 +107,12 @@ const Contacts = () => {
                 value={formData.message}
               />
             </div>
-            <div className="flex justify-center items-center my-6">
+            <div className="flex justify-center items-center my-6 w-full">
               <button
                 type="submit"
-                className="flex justify-center items-center bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai almarai-extrabold w-40"
+                className="flex justify-center items-center text-center bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai almarai-extrabold w-40"
               >
+                ارسال
                 <Image
                   className="pt-2 mx-2"
                   src={leftArrow}
@@ -114,12 +120,16 @@ const Contacts = () => {
                   width={24}
                   height={24}
                 />
-                ارسال
               </button>
             </div>
           </form>
         </div>
       </div>
+      <Image 
+        src={headerBack}
+        alt="Header Back"
+        className="absolute -top-[14px] sm:-top-9 right-1/6"
+      />
     </div>
   );
 };
