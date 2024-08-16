@@ -49,7 +49,7 @@ const Contacts = () => {
       className="relative flex almarai flex-col text-right items-center justify-center gap-4 p-0 sm:p-12 pt-0 bg-[#FCFCFC]"
       style={{ direction: "rtl" }}
     >
-      <div className="flex flex-col p-11 gap-6 w-full bg-white">
+      <div className="flex flex-col p-11 gap-6 w-full sm:w-fit bg-white">
         <h1 className="text-text1 almarai-extrabold text-3xl">تواصل معنا</h1>
         <p className="text-text2 font-normal text-sm">
           يرجى ترك معلوماتك لنا، حتى نتمكن من بدء محادثتنا لتزويدك بمزيد من
