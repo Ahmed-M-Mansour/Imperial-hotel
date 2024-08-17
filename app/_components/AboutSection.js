@@ -28,7 +28,7 @@ function AboutSection() {
           </div>
         </div>
         <div className="flex-1 flex flex-col items-end text-center sm:text-right">
-          <div className="absolute top-7 right-1">
+          <div className="absolute top-7 right-1 hidden sm:block">
             <Image src={RightImage} alt="About Iamge" />
           </div>
           <h1 className="text-2xl text-gold almarai-bold w-full">مـن نــحن</h1>

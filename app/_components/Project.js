@@ -88,13 +88,13 @@ const Project = ({ Project }) => {
         </div>
       </div>
       {/* TODO: Return This when get the main data/images */}
-      {/* <Image 
+      <Image 
         src={Project.coverUrl}
         alt="Project Cover"
         className="w-full h-full"
         width={800}
         height={400}
-      /> */}
+      />
     </div>
   );
 };
