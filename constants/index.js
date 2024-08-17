@@ -50,6 +50,10 @@ import Member4 from "@/public/member4.svg";
 import User1 from "@/public/user1.svg";
 import User2 from "@/public/User2.svg";
 import User3 from "@/public/user3.svg";
+import User4 from "@/public/User4.jpg";
+import User5 from "@/public/User5.jpg";
+import User6 from "@/public/User6.jpg";
+import User7 from "@/public/User7.jpg";
 
 const Members = [
   {
@@ -184,7 +188,7 @@ const data = {
     ],
   },
   england: {
-    name: "بريطانيا",
+    name: "الممــــــلكة المتحدة",
     projects: [
       {
         id: 0,
@@ -265,33 +269,33 @@ const testimonials = [
   {
     text: "النص الكامل للوريم إيبسوم هو مجرد تسلسل عشوائي من الكلمات والجمل باللغة اللاتينية، وهو لا يحمل أي معنى محدد. يُستخدم هذا النص في الصناعات المطبعية.",
     user: {
-      name: "أحمد أشرف",
+      name: "أحمد الفارسي",
       type: "كاتب",
-      image: User1,
+      image: User4,
     },
   },
   {
     text: "النص الكامل للوريم إيبسوم هو مجرد تسلسل عشوائي من الكلمات والجمل باللغة اللاتينية، وهو لا يحمل أي معنى محدد. يُستخدم هذا النص في الصناعات المطبعية.",
     user: {
-      name: "أميرة أكرم",
-      type: "مبرمجة",
-      image: User2,
+      name: "عمر الخالدي",
+      type: "مبرمج",
+      image: User5,
     },
   },
   {
     text: "النص الكامل للوريم إيبسوم هو مجرد تسلسل عشوائي من الكلمات والجمل باللغة اللاتينية، وهو لا يحمل أي معنى محدد. يُستخدم هذا النص في الصناعات المطبعية.",
     user: {
-      name: "أميرة أكرم",
-      type: "مبرمجة",
-      image: User3,
+      name: "سامي الجابري",
+      type: "مبرمج",
+      image: User6,
     },
   },
   {
     text: "النص الكامل للوريم إيبسوم هو مجرد تسلسل عشوائي من الكلمات والجمل باللغة اللاتينية، وهو لا يحمل أي معنى محدد. يُستخدم هذا النص في الصناعات المطبعية.",
     user: {
-      name: "أحمد أشرف",
+      name: "خالد البكري",
       type: "كاتب",
-      image: User1,
+      image: User7,
     },
   },
   {
