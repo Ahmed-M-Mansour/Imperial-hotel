@@ -76,7 +76,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="col-span-4 flex items-end flex-col gap-y-3 mt-3 lg:mr-16">
+      <div className="col-span-4 flex items-end flex-col gap-y-3 mt-3 w-full px-5">
         <div className="flex items-center space-x-2">
           <h5 className=" font-almarai font-normal text-sm">
             المكتب : مول – القاهرة – مصر
