@@ -37,9 +37,10 @@ const ImageCarousel = ({ images }) => {
             <div key={index} className="flex items-center justify-center">
               <Image
                 src={url}
-                alt={`Project Image ${index}`}
-                width="100%"
-                height={300}
+                alt={`Project Image ${index+1}`}
+                // width="100%"
+                // height={300}
+                className="w-full h-[300px]"
               />
             </div>
           ))}
