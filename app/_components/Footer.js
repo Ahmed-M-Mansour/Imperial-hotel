@@ -10,7 +10,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="grid grid-cols-12 p-12">
+    <footer className="flex flex-col justify-center items-center sm:grid sm:grid-cols-12 gap-3 p-0 sm:p-12 w-full">
       <div className="col-span-12 h-20 flex justify-end items-center mb-3 lg:mr-16">
         <Image src={Logo} alt="Logo" width={160} height={64} />
       </div>
@@ -38,7 +38,7 @@ function Footer() {
         </div>
       </div>
       <div className="col-span-4">
-        <div className="flex  justify-around w-full">
+        <div className="flex flex-col gap-2 justify-around w-full">
           <div className="flex flex-col text-right">
             <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
               {" "}
@@ -116,7 +116,7 @@ function Footer() {
         style={{ width: "85%" }}
         className="col-span-12 mx-auto mt-8 border border-border1 opacity-50"
       ></div>
-      <h6 className="col-span-12 text-center  text font-almarai font-normal text-sm text-color4 my-4">
+      <h6 className="col-span-12 text-center text font-almarai font-normal text-sm text-color4 my-4">
         حقوق الطبع والنشر 2024 إمبريال هوست. كل الحقوق محفوظة ©
       </h6>
     </footer>

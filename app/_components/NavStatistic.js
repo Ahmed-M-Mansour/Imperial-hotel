@@ -3,7 +3,7 @@ function NavStatistic({ number, title, icon }) {
   return (
     <div className="flex p-3 bg-navstate">
       <div className="  text-right px-3">
-        <h3 className=" font-extrabold text-xl text-darkblue poppins-extrabold">
+        <h3 className=" almarai-extrabold text-xl text-darkblue poppins-extrabold">
           {number}
         </h3>
         <h4 className="font-bold text-sm text-color3 py-1 almarai-bold">
