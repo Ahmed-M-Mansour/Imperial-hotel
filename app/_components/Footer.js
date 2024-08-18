@@ -37,8 +37,8 @@ function Footer() {
           </h6>
         </div>
       </div>
-      <div className="col-span-4">
-        <div className="flex flex-col gap-2 justify-around w-full">
+      <div className="col-span-12 sm:col-span-4 w-full px-5">
+        <div className="flex flex-col gap-2 justify-end w-full">
           <div className="flex flex-col text-right">
             <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
               {" "}

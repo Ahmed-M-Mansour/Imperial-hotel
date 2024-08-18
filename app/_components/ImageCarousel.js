@@ -26,7 +26,7 @@ const ImageCarousel = ({ images }) => {
                 alt={`Project Image ${index}`}
                 // width={"100%"}
                 // height={300}
-                className="w-full h-full"
+                className="w-full h-[300px]"
               />
             </div>
           ))}

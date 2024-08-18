@@ -107,11 +107,12 @@ const Contacts = () => {
                 value={formData.message}
               />
             </div>
-            <div className="flex justify-center items-center my-6 w-full">
+            <div className="flex justify-center sm:justify-start items-center my-6 w-full">
               <button
                 type="submit"
                 className="flex justify-center items-center text-center bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai almarai-extrabold w-40 gap-[10px]"
               >
+                ارسال
                 <div className="flex justify-center items-center h-full">
                   <Image
                     className="pt-2 mx-2"
@@ -121,7 +122,6 @@ const Contacts = () => {
                     height={24}
                   />
                 </div>
-                ارسال
               </button>
             </div>
           </form>
