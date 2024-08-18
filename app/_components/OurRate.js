@@ -1,5 +1,6 @@
 import React from "react";
-import RateItem from "./RateItem";
+// import RateItem from "./RateItem";
+import RateItem from "@/app/_components/RateItem"; 
 import Icon1 from "@/public/rIcon1.svg";
 import Icon2 from "@/public/rIcon2.svg";
 import Icon3 from "@/public/rIcon3.svg";
