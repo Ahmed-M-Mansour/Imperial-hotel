@@ -106,7 +106,6 @@ const Contacts = () => {
                 onChange={handleChange}
                 value={formData.message}
               />
-            </div>
             <div className="flex justify-center sm:justify-start items-center my-6 w-full">
               <button
                 type="submit"
@@ -123,6 +122,7 @@ const Contacts = () => {
                   />
                 </div>
               </button>
+            </div>
             </div>
           </form>
         </div>
