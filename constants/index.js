@@ -1,5 +1,5 @@
 import coverBadrany from "@/public/coverBadrany.svg";
-import coverBadrany2 from "@/public/coverBadrany.svg";
+import coverBadrany2 from "@/public/coverBadrany2.jpg";
 import coverAslam from "@/public/coverAslam.svg";
 import coverWahadat from "@/public/coverWahadat.svg";
 import coverAhram from "@/public/coverAhram.svg";
