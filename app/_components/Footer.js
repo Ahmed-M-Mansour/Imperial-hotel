@@ -40,39 +40,39 @@ function Footer() {
       <div className="col-span-12 sm:col-span-4 w-full px-5">
         <div className="flex flex-col gap-2 justify-end w-full">
           <div className="flex flex-col text-right">
-            <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
+            <h3 className="font-almarai font-extrabold text-lg leading-10 text-text1">
               {" "}
               المشاريع المتاحة{" "}
             </h3>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            <Link className="font-almarai font-normal text-sm text-text2" href="/projects/misr">
               {" "}
               مصر{" "}
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link className="font-almarai font-normal text-sm text-text2" href="/projects/saudi">
               {" "}
               المملكة العربية السعودية{" "}
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link className="font-almarai font-normal text-sm text-text2" href="/projects/england">
               {" "}
               المملكة المتحدة{" "}
-            </h6>
+            </Link>
           </div>
           <div className="flex flex-col text-right">
-            <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
+            <h3 className="font-almarai font-extrabold text-lg leading-10 text-text1">
               روابط مفيدة{" "}
             </h3>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            <Link className="font-almarai font-normal text-sm text-text2" href="/about">
               {" "}
               معلومات عنا
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link href="/projects" className="font-almarai font-normal text-sm text-text2">
               {" "}
               مشاريعنا{" "}
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link href="/about" className="font-almarai font-normal text-sm text-text2">
               {" "}
               تواصل معنا{" "}
-            </h6>
+            </Link>
           </div>
         </div>
       </div>
