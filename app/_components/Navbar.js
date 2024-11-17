@@ -2,10 +2,10 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { useTheme, useMediaQuery } from "@mui/material";
 
-import Logo from "@/public/logo.svg";
-import Image from "next/image";
+import Logo from "@/public/logo.png";
 import leftArrow from "@/public/left-arrow.svg";
 import NavStatistic from "./NavStatistic";
 import stateIcon1 from "@/public/navstate1.svg";
@@ -68,7 +68,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
           ))}
         </div>
         <>
-          <Image src={Logo} alt="Logo" width={160} height={64} />
+          <Image src={Logo} alt="Logo" width={160} height={64} className="" />
         </>
       </div>
       <div

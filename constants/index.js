@@ -7,10 +7,13 @@ import coverNile from "@/public/coverNile.svg";
 import coverLondon from "@/public/LondonCover.svg";
 import coverEng from "@/public/engCover.svg";
 import coverDabab from "@/public/dababCover.svg";
-import badrany1 from "@/public/badrany1.svg";
-import badrany2 from "@/public/badrany2.svg";
-import badrany3 from "@/public/badrany3.svg";
-import badrany4 from "@/public/badrany4.svg";
+import badrany1 from "@/public/badrany1.jpg";
+import badrany2 from "@/public/badrany2.jpg";
+import badrany3 from "@/public/badrany3.jpg";
+import badrany4 from "@/public/badrany4.jpg";
+import badrany5 from "@/public/badrany5.jpg";
+import badrany6 from "@/public/badrany6.jpg";
+import badrany7 from "@/public/badrany7.jpg";
 import Wahadat1 from "@/public/wahadat-1.jpg";
 import Wahadat2 from "@/public/wahadat-2.jpg";
 import Wahadat3 from "@/public/wahadat-3.jpg";
@@ -91,7 +94,7 @@ const data = {
         name: "البدراني 1",
         coverUrl: "/CoverBadrany1.svg",
         cover: coverBadrany,
-        images: [badrany1, badrany2, badrany3, badrany4],
+        images: [badrany1, badrany2, badrany3, badrany4, badrany5, badrany6, badrany7],
         description1:
           "أستمتع بإقامة فاخرة، مناسبة تمامًا للاسترخاء في حي مذينب.",
         description2:
@@ -316,4 +319,40 @@ const testimonials = [
   },
 ];
 
-export { data, Members, testimonials };
+const timeline = [
+  {
+    year: "2023",
+    description:
+      "أدرنا أكثر من 200 وحدة وتوسعنا في كلا من المملكة السعودية و المتحدة",
+  },
+  {
+    year: "2022",
+    description:
+      "أخذنا على عاتقنا مسؤولية الاشراف علي 45 وحدة في المملكة المتحدة 🚀",
+  },
+  {
+    year: "2021",
+    description:
+      "توسعت عملياتنا لـ أكثر من 50 وحدة في الرياض وساعدنا في تأسيس حضور بارز في السوق 🚀",
+  },
+  {
+    year: "2020",
+    description:
+      "عززنا إيرادات كل وحدة بشكل لافت إذ ارتفع من 13 ألف دولار عام 2019 إلى 23 ألف دولار",
+  },
+  {
+    year: "2019",
+    description: "نحن فخورين بإدارة أفضل العقارات و أكثرها تميزاً في مصر.",
+  },
+  {
+    year: "2018",
+    description:
+      "نجحنا في إدارة و تقديم أكثر من 20 وحدة سكنية في جميع أنحاء مصر 🚀",
+  },
+  {
+    year: "2017",
+    description: "إدارة وحدة سكنية لنا في مصر بإحترافية عالية 🔍",
+  },
+];
+
+export { data, Members, testimonials, timeline };

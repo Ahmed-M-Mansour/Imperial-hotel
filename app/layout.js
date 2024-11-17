@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer from "./_components/Footer";
 
 export const metadata = {
-  title: "Imerial Hostel",
-  description: "Imerial Hostel",
+  title: "Imperial Hostel",
+  description: "Imperial Hostel",
 };
 
 export default function RootLayout({ children }) {

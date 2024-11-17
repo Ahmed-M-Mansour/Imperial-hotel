@@ -25,14 +25,6 @@ const Testimonials = () => {
 
   const totalSlides = Math.ceil(testimonials.length / testimonialsPerSlide);
 
-  const nextSlide = () => {
-    setSlide((prev) => (prev + 1) % totalSlides);
-  };
-
-  const prevSlide = () => {
-    setSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
-  };
-
   return (
     <div
       style={{ direction: "rtl" }}
@@ -91,7 +83,7 @@ const Testimonials = () => {
             <div
               key={index}
               className={`h-2 w-8 rounded-full cursor-pointer transition-all ${
-                slide === index ? "bg-gold w-16" : "bg-gray-300"
+                slide === index ? "bg-gold w-20" : "bg-gray-300"
               }`}
               onClick={() => setSlide(index)}
             ></div>

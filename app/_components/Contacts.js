@@ -62,7 +62,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   name="fullName"
-                  placeholder="أدخل الاسم الكامل"
+                  placeholder="الاسم الكامل"
                   className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-2 focus:outline-none  rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-12"
                   onChange={handleChange}
                   value={formData.fullName}
@@ -71,7 +71,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   name="phoneNumber"
-                  placeholder="رقم الهاتف"
+                  placeholder='رقم الهاتف'
                   className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-2 focus:outline-none  rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-12"
                   onChange={handleChange}
                   value={formData.phoneNumber}
@@ -91,7 +91,7 @@ const Contacts = () => {
                 <input
                   type="text"
                   name="companyName"
-                  placeholder="اسم الشركة"
+                  placeholder="رقم الواتس اب"
                   className="bg-[#FBFBFB] border-[#BBC1CE] focus:border-gold border-2 focus:outline-none  rounded-lg px-4 py-5 placeholder:text-[#7A869A] w-[38%] sm:w-full h-12"
                   onChange={handleChange}
                   value={formData.companyName}

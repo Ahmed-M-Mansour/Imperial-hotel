@@ -7,13 +7,15 @@ function Offer() {
     <div className="p-6 contacts-bg flex justify-center items-center w-fit sm:w-full">
       <div className="sm:max-w-4xl max-w-fit text-left sm:text-center">
         <h2 className="font-almarai almarai-extrabold text-xl sm:text-2xl py-2 w-full text-center">
-          إختبار أداء وحدتك مجاناً (بقيمة 500 ريال سعودي)
+          أختبر أداء وحداتك (بقيمة 500 ريال سعودي)
         </h2>
-        <p className="font-almarai font-normal text-sm w-full text-center sm:w-3/4 mx-0 sm:mx-auto leading-6 mb-4">
+        <p className="relative font-almarai font-normal text-sm w-full text-center sm:w-3/4 mx-0 sm:mx-auto leading-6 mb-4">
           اسمح لفريقنا بإجراء سلسلة من الاختبارات حول الأسعار والصور وجودة
           القائمة وإعداد القناة ووقت الاستجابة وما إلى ذلك، لمنحك درجة من 100
-          وتزويدك بقائمة من الاقتراحات القابلة للتنفيذ لتحسين قوائمك اليوم. وهو
-          !<span> مجاني </span>{" "}
+          وتزويدك بقائمة من الاقتراحات القابلة للتنفيذ لتحسين أداء و دخل وحداتك.
+          وهو
+          <span> مجاني</span>
+          {/* <span className="sm:left-6 right-[168px] bottom-0 absolute">!</span> */}
         </p>
         <form>
           <div className="p-2">
@@ -44,7 +46,7 @@ function Offer() {
             <input
               className="flex-1 w-full text-right px-2 py-2 sm:py-1 h-10 rounded-lg bg-white border-2 border-bgContacts focus:border-gold focus:outline-none font-almarai font-normal text-sm leading-4"
               type="text"
-              placeholder="حجم المحفظة "
+              placeholder="حجم المدينة "
             />
           </div>
           <div className="p-2">

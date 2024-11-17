@@ -11,7 +11,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        'badrany2': "url('/coverBadrany2.svg')"
+        badrany2: "url('/coverBadrany2.svg')",
       },
       colors: {
         gold: "#B7A580",
@@ -33,6 +33,9 @@ module.exports = {
       },
       backgroundImage: {
         homeBg: "url('../public/home-bg.svg')",
+      },
+      boxShadow: {
+        custom: "0px 7.5px 69px 0px #0000000F",
       },
     },
   },

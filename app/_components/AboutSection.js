@@ -23,7 +23,7 @@ function AboutSection() {
             <NavStatistic
               icon={stateIcon3}
               number="إدارة تأجير العقارات "
-              title="ادارة ايجــــار العقارات طويلة وقصيرة المدي "
+              title="ادارة ايجــــار العقارات اليومية و الشهرية "
             />
           </div>
         </div>
@@ -37,18 +37,18 @@ function AboutSection() {
           </h2>
           <p className="text-base sm:text-lg text-right leading-10 my-3 almarai-regular">
             شركتنا إمبــــريال هوست شركة رائدة في إدارة العقارات، اذ نتخصص في
-            تأجير مرافق الضيافة قصيرة الأجل وطويلة الأجل عبر الأسواق الإقليمية.
+            تأجير مرافق الضيافة اليومية و الشهرية الأجل عبر الأسواق الإقليمية.
             هي حكاية ارث لافت ومثير يمتد لأكثر من 7 سنوات، وفي قلب مصر الدولة
             التي اشتهرت بقطاعها السياحي الجاذب، تمت رعاية رحلتنا في مجال الضيافة
           </p>
-          <div className="my-2 w-full sm:w-fit sm:block flex items-center justify-center">
+          {/* <div className="my-2 w-full sm:w-fit sm:block flex items-center justify-center">
             <button className="flex items-center  bg-gold rounded-3xl text-white px-8 py-3  font-bold text-xl almarai-extrabold">
               <Image src={leftArrow} alt="Arrow" width={24} height={24} />
               <Link href="/contacts" className="pl-3">
                 عن شركتنا
               </Link>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

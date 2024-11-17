@@ -23,7 +23,7 @@ function AboutGrid() {
             <NavStatistic
               icon={stateIcon3}
               number="إدارة تأجير العقارات "
-              title="ادارة ايجــــار العقارات طويلة وقصيرة المدي دارة تأجير العقارات "
+              title="ادارة ايجــــار العقارات اليومية و الشهرية دارة تأجير العقارات "
             />
           </div>
         </div>
@@ -38,16 +38,17 @@ function AboutGrid() {
             عن شركة إمبــــريال هوست لخدمات الإيجار
           </h2>
           <p className=" text-lg leading-10 my-3 almarai-regular">
-            شركتنا إمبــــريال هوست شركة رائدة في إدارة العقارات، اذ نتخصص في
-            تأجير مرافق الضيافة قصيرة الأجل وطويلة الأجل عبر الأسواق الإقليمية.
-            هي حكاية ارث لافت ومثير يمتد لأكثر من 7 سنوات، وفي قلب مصر الدولة
-            التي اشتهرت بقطاعها السياحي الجاذب، تمت رعاية رحلتنا في مجال الضيافة
+            شركتنا <span className="font-bold text-[#42526E]">إمبــــريال هوست</span> شركة
+            رائدة في إدارة العقارات، اذ نتخصص في تأجير مرافق الضيافة اليومية و
+            الشهرية عبر الأسواق الإقليمية. هي حكاية ارث لافت ومثير يمتد لأكثر من{" "}
+            <span className="font-bold text-[#42526E]">7 سنوات</span>، وفي قلب مصر الدولة التي
+            اشتهرت بقطاعها السياحي الجاذب، تمت رعاية رحلتنا في مجال الضيافة
           </p>
           <div className="my-2">
             <button className="flex items-center  bg-gold rounded-3xl text-white px-8 py-3  font-bold text-xl almarai-extrabold">
               <Image src={leftArrow} alt="Arrow" width={24} height={24} />
               <Link href="/Offer" className="pl-3">
-                عن شركتنا
+                تواصل معنا
               </Link>
             </button>
           </div>
