@@ -51,7 +51,7 @@ function Services() {
           ))}
         </div>
         <div className="lg:col-span-2 hidden sm:block">
-          <div className="">
+          <div className="flex h-full w-full items-center justify-center">
             <Image
               src={servicesImage}
               alt="Services Image"

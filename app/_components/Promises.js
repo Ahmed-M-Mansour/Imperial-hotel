@@ -29,7 +29,7 @@ const Promises = () => {
       </header>
       <div className="p-0 sm:p-6 w-full grid lg:grid-cols-5 md:grid-col-1 gap-3">
         <div className="lg:col-span-2 hidden sm:block">
-          <div className="">
+          <div className="flex h-full w-full items-center justify-center">
             <Image src={PromisesImage} alt="Promises Image" />
           </div>
         </div>
