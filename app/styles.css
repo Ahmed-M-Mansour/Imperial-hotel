@@ -157,6 +157,12 @@
   font-style: normal;
 }
 
+.almarai-black {
+  font-family: "Almarai", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 .home-bg {
   background-image: url("../public/home-bg.svg");
   height: 100vh;

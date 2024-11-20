@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import ServiceItem from "./ServiceItem";
-import PromisesImage from '@/public/promises-s.svg';
+import PromisesImage from "@/public/promises-s.svg";
 
 const promises = [
   {
@@ -34,7 +34,7 @@ const Promises = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6 lg:col-span-3 ">
-          <p className="text-[#42526E] font-normal text-base leading-8 text-right">
+          <p className="text-[#42526E] almarai-normal text-base leading-8 text-right">
             تمثل هذه الاهداف الثلاثة بوصلة امبيريال هوست التي تسعي الي خلق تجربة
             ضيافة جديدة بمعايير مختلفة ولا مثيل لها
           </p>
