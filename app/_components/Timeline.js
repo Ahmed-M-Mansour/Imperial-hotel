@@ -16,7 +16,7 @@ const Timeline = () => {
           رحلة تطور شركتنا عبر السنين
         </p>
       </div>
-      <div className="relative w-full px-3">
+      <div className="relative w-full px-3 flex flex-col gap-8">
         <div className="flex items-center justify-center gap-6 lg:gap-20 flex-wrap sm:flex-nowrap px-4 sm:gap-4">
           {topCards.map(({ year, description }) => (
             <div
@@ -33,7 +33,7 @@ const Timeline = () => {
           ))}
         </div>
         
-        <div className="relative my-8 hidden sm:flex items-center justify-center sm:justify-evenly gap-8 lg:gap-10 sm:gap-2 w-full border-t border-[#DEDEE9]">
+        <div className="relative hidden sm:flex items-center justify-center sm:justify-evenly gap-8 lg:gap-10 sm:gap-2 w-full border-t border-[#DEDEE9]">
           {Array.from({ length: 7 }).map((_, index) => (
             <div
               key={index}
@@ -42,11 +42,11 @@ const Timeline = () => {
           ))}
         </div>
         
-        <div className="flex items-center justify-center gap-6 lg:gap-20 flex-wrap sm:flex-nowrap px-4 sm:gap-4">
+        <div className="flex sm:flex-row flex-col items-center justify-evenly gap-6 sm:gap-0 flex-nowrap sm:flex-nowrap px-4">
           {bottomCards.map(({ year, description }) => (
             <div
               key={year}
-              className="rounded-xl py-6 px-4 gap-3 bg-white flex flex-col items-center justify-center max-w-[200px] sm:max-w-full"
+              className="rounded-xl py-6 px-4 gap-3 sm:w-1/5 bg-white flex flex-col items-center justify-center max-w-[200px] sm:max-w-full"
             >
               <h4 className="almarai-black text-base text-[#B7A580] leading-[9.04px]">
                 {year}
