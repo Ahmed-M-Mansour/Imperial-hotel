@@ -10,7 +10,7 @@ function Projects() {
         isFullHeight={false}
         bgClassName="projects-bg"
         title="مشاريع شركة إمبريال"
-        desc="الرئيسيه/مشاريعنا"
+        desc="الرئيسيه/شركائنا"
       />
       <OurProjects />
       <Offer />

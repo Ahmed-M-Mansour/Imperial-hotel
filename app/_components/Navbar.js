@@ -21,7 +21,7 @@ const links = [
   {
     id: 2,
     path: "/projects",
-    text: "مشاريعنا",
+    text: "شركائنا",
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ const Navbar = ({ isHome, isFullHeight, bgClassName, bgUrl, title, desc }) => {
             />
             <NavStatistic
               icon={stateIcon2}
-              number="97%"
+              number="99%"
               title="نسبــة رضا العملاء"
             />
             <NavStatistic icon={stateIcon3} number="300+" title="وحـــدة" />

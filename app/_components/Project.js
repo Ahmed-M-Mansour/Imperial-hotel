@@ -17,15 +17,22 @@ const Project = ({ Project }) => {
       }}
     >
       <h1 className="almarai-extrabold text-[32px]">{Project.name}</h1>
-      <p className="text-text2 almarai-regular text-lg">{Project.description1}</p>
+      <p className="text-text2 almarai-regular text-lg">
+        {Project.description1}
+      </p>
       <ImageCarousel images={Project.images} />
       <p className="text-text2 text-base">{Project.description2}</p>
       {Project.features && Project.features.length > 0 && (
         <>
-          <p className="text-base almarai-regular text-text2">استرخاء وراحة لا مثيل لها:</p>
+          <p className="text-base almarai-regular text-text2">
+            استرخاء وراحة لا مثيل لها:
+          </p>
           <ul className="list-disc pr-5 space-y-2">
             {Project.features.map((text, index) => (
-              <li key={index} className="text-text2 almarai-regular text-base flex items-center space-x-2 gap-2">
+              <li
+                key={index}
+                className="text-text2 almarai-regular text-base flex items-center space-x-2 gap-2"
+              >
                 <span className="w-1 h-1 bg-black rounded-full"></span>
                 {text}
               </li>
@@ -33,7 +40,14 @@ const Project = ({ Project }) => {
           </ul>
         </>
       )}
-      <p className="text-text2 text-base almarai-regular">{Project.description3}</p>
+      <p className="text-text2 text-base almarai-regular">
+        {Project.description3}
+      </p>
+      {Project.description4 && (
+        <p className="text-text2 text-base almarai-regular">
+          {Project.description4}
+        </p>
+      )}
       <Link href="/contacts">
         <button className="flex justify-center items-center gap-4 text-center bg-gold rounded-3xl text-white px-8 py-3 my-2 text-xl font-almarai almarai-extrabold w-fit">
           <Link href="/contacts"> تواصل معنا </Link>

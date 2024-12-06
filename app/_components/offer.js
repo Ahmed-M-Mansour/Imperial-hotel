@@ -13,9 +13,7 @@ function Offer() {
           اسمح لفريقنا بإجراء سلسلة من الاختبارات حول الأسعار والصور وجودة
           القائمة وإعداد القناة ووقت الاستجابة وما إلى ذلك، لمنحك درجة من 100
           وتزويدك بقائمة من الاقتراحات القابلة للتنفيذ لتحسين أداء و دخل وحداتك.
-          وهو
-          <span> مجاني</span>
-          {/* <span className="sm:left-6 right-[168px] bottom-0 absolute">!</span> */}
+          وهو مجاني
         </p>
         <form>
           <div className="p-2">
@@ -46,7 +44,7 @@ function Offer() {
             <input
               className="flex-1 w-full text-right px-2 py-2 sm:py-1 h-10 rounded-lg bg-white border-2 border-bgContacts focus:border-gold focus:outline-none font-almarai font-normal text-sm leading-4"
               type="text"
-              placeholder="حجم المدينة "
+              placeholder="المدينة"
             />
           </div>
           <div className="p-2">

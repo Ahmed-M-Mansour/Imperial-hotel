@@ -54,13 +54,6 @@ const Testimonials = () => {
               >
                 <div className="flex justify-between gap-10 sm:gap-20 items-center">
                   <div className="flex gap-4">
-                    <Image
-                      src={user.image}
-                      alt={`${user.name}'s Image`}
-                      width={40}
-                      height={40}
-                      className="rounded-full"
-                    />
                     <div className="flex flex-col items-center gap-1">
                       <h4 className="text-text1 almarai-extrabold text-xs sm:text-base">
                         {user.name}

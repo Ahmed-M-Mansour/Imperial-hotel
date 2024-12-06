@@ -14,7 +14,7 @@ function OurProjects() {
   return (
     <div className="mr-8 rounded-tr-3xl flex flex-col text-center justify-center items-center w-full p-6 py-12">
       <h1 className="text-gold font-almarai text-2xl leading-8 font-bold">
-        مشاريعنا
+        شركائنا
       </h1>
       <p className=" font-almarai almarai-extrabold text-xl leading-10 py-2">
         نحن مـــــــــــوجودون في امــــاكن مختــــلفة

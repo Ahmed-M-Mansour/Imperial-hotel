@@ -42,7 +42,7 @@ function Footer() {
           <div className="flex flex-col text-right">
             <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
               {" "}
-              المشاريع المتاحة{" "}
+              شركائنا{" "}
             </h3>
             <h6 className=" font-almarai font-normal text-sm text-text2">
               {" "}
@@ -67,7 +67,7 @@ function Footer() {
             </h6>
             <h6 className=" font-almarai font-normal text-sm text-text2">
               {" "}
-              مشاريعنا{" "}
+              شركائنا{" "}
             </h6>
             <h6 className=" font-almarai font-normal text-sm text-text2">
               {" "}
@@ -79,7 +79,15 @@ function Footer() {
       <div className="col-span-4 flex items-end flex-col gap-y-3 mt-3 lg:mr-16">
         <div className="flex items-center space-x-2">
           <h5 className=" font-almarai font-normal text-sm">
-            المكتب : مول – القاهرة – مصر
+            مصر: حدائق الاهرام - الجيزة
+          </h5>
+          <span>
+            <Image alt="icon" src={fLocation} width={20} height={20} />
+          </span>
+        </div>
+        <div className="flex items-center space-x-2">
+          <h5 className="text-right font-almarai font-normal text-sm">
+            السعودية: مبنى إعمار - شارع انس ابن مالك - حي الملقا - الرياض
           </h5>
           <span>
             <Image alt="icon" src={fLocation} width={20} height={20} />
@@ -87,8 +95,7 @@ function Footer() {
         </div>
         <div className="flex items-center space-x-2">
           <h5 className=" font-almarai font-normal text-sm">
-            <span className=" font-poppins font-semibold"> +201044000729 </span>{" "}
-            أتصل بنا :
+            أتصل بنا: <span className=" font-poppins font-semibold"> +201063679025 </span>
           </h5>
           <span>
             <Image alt="icon" src={fContacts} width={20} height={20} />
@@ -96,11 +103,14 @@ function Footer() {
         </div>
         <div className="flex items-center space-x-2">
           <h5 className=" font-almarai font-normal text-sm">
-            <span className=" font-poppins font-semibold">
+            {/* <span className=" font-poppins font-semibold">
               {" "}
               info@IMPERIAL.com{" "}
-            </span>{" "}
-            :البريد الإلكتروني
+            </span>{" "} */}
+            <span className="font-poppins font-semibold">
+              info@imperialhost.co
+            </span> : البريد
+            
           </h5>
           <span>
             <Image alt="icon" src={fEmail} width={20} height={20} />
