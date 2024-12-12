@@ -5,7 +5,7 @@ import coverHotel from "@/public/hotelCover.svg";
 import coverAhram from "@/public/coverAhram.svg";
 import coverLondon from "@/public/LondonCover.svg";
 import coverEng from "@/public/engCover.svg";
-import coverDabab from "@/public/dababCover.svg";
+import coverMan from "@/public/ManCover.svg";
 import badrany1 from "@/public/badrany1.jpg";
 import badrany2 from "@/public/badrany2.jpg";
 import badrany3 from "@/public/badrany3.jpg";
@@ -154,7 +154,7 @@ const data = {
         id: 2,
         name: "السلام 1",
         cover: coverAslam,
-        coverUrl: "/CoverAslam.jpg",
+        coverUrl: "/saudi.jpg",
         images: [Aslam1, Aslam2, Aslam3, Aslam4, Aslam5, Aslam6, Aslam7],
         description1:
           "أقامتك الفاخرة الآن على بعد 10 دقائق بالسيارة فقط عن المسجد النبوي.",
@@ -176,7 +176,7 @@ const data = {
       {
         id: 0,
         name: "غرفة فندقية بمغطس ساخن",
-        coverUrl: "/wahadatCover.jpg",
+        coverUrl: "/wahadatCover.jpeg",
         cover: coverHotel,
         images: [Hotel1, Hotel2, Hotel3, Hotel4, Hotel5, Hotel6, Hotel7],
         description1: "وحدات فاخرة بالقرب من الأهرامات.",
@@ -195,7 +195,7 @@ const data = {
         id: 1,
         name: "شقة عائلية بإطلالة الأهرامات",
         cover: coverAhram,
-        coverUrl: "/AhramCover.jpg",
+        coverUrl: "/AhramCover.jpeg",
         images: [Ahram1, Ahram2, Ahram3, Ahram4, Ahram5, Ahram6],
         description1: "مساكن فاخرة بالقرب من الأهرامات.",
         description2:
@@ -248,8 +248,8 @@ const data = {
       {
         id: 2,
         name: "مانشستر سيتي",
-        cover: coverDabab,
-        coverUrl: "/coverDabab.jpg",
+        cover: coverMan,
+        coverUrl: "/coverMan.jpg",
         images: [
           ManCity1,
           ManCity2,

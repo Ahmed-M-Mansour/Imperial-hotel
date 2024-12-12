@@ -26,7 +26,7 @@ const ImageCarousel = ({ images }) => {
                   alt={`Slide Image ${index}`}
                   width={800}
                   height={500}
-                  className="object-contain"
+                  className="object-contain rounded-sm"
                 />
               </div>
             ))}

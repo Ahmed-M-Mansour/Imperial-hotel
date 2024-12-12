@@ -9,7 +9,7 @@ function Projects() {
         isHome={false}
         isFullHeight={false}
         bgClassName="projects-bg"
-        title="مشاريع شركة إمبريال"
+        title="شركاء امبريال هوست"
         desc="الرئيسيه/شركائنا"
       />
       <OurProjects />
@@ -19,3 +19,4 @@ function Projects() {
 }
 
 export default Projects;
+// "مشاريع شركة إمبريال"
