@@ -15,7 +15,7 @@ function Footer() {
         <Image src={Logo} alt="Logo" width={160} height={64} />
       </div>
       <div className="col-span-4">
-        <div className="flex flex-col text-right px-3">
+        <div className="flex flex-col items-center justify-center text-right px-3">
           <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
             يشترك
           </h3>
@@ -32,15 +32,15 @@ function Footer() {
               placeholder="أدخل بريدك الإلكتروني"
             />
           </div>
-          <h6 className=" font-almarai font-normal text-sm text-color4 mt-2">
+          <h6 className="text-center font-almarai font-normal text-sm text-color4 mt-2">
             بالاشتراك فإنك توافق على سياسة الخصوصية الخاصة بنا{" "}
           </h6>
         </div>
       </div>
       <div className="col-span-4">
         <div className="flex flex-col gap-2 justify-around w-full">
-          <div className="flex flex-col text-right">
-            <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
+          <div className="flex flex-col items-center justify-center text-right">
+            <h3 className="font-almarai font-extrabold text-lg leading-10 text-text1">
               {" "}
               شركائنا{" "}
             </h3>
@@ -57,7 +57,7 @@ function Footer() {
               المملكة المتحدة{" "}
             </h6>
           </div>
-          <div className="flex flex-col text-right">
+          <div className="flex flex-col items-center justify-center text-right">
             <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
               روابط مفيدة{" "}
             </h3>
@@ -76,7 +76,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="col-span-4 flex items-end flex-col gap-y-3 mt-3 lg:mr-16">
+      <div className="col-span-4 flex items-center justify-center sm:items-end flex-col gap-y-3 mt-3 lg:mr-16">
         <div className="flex items-center space-x-2">
           <h5 className=" font-almarai font-normal text-sm">
             مصر: حدائق الاهرام - الجيزة
@@ -86,7 +86,7 @@ function Footer() {
           </span>
         </div>
         <div className="flex items-center space-x-2">
-          <h5 className="text-right font-almarai font-normal text-sm">
+          <h5 className="text-right sm:w-fit w-36 font-almarai font-normal text-sm">
             السعودية: مبنى إعمار - شارع انس ابن مالك - حي الملقا - الرياض
           </h5>
           <span>

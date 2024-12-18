@@ -52,7 +52,7 @@ const Testimonials = () => {
                 key={index}
                 className="flex flex-col justify-center items-center p-4 sm:p-6 rounded-[12.8px] bg-white gap-3 w-full"
               >
-                <div className="flex justify-between gap-10 sm:gap-20 items-center">
+                <div className="flex justify-around gap-10 w-full sm:gap-20 items-center">
                   <div className="flex gap-4">
                     <div className="flex flex-col items-center gap-1">
                       <h4 className="text-text1 almarai-extrabold text-xs sm:text-base">
@@ -63,7 +63,7 @@ const Testimonials = () => {
                       </h6>
                     </div>
                   </div>
-                  <Image src={Quotes} alt="Quotes" width={40} height={40} />
+                  <Image src={Quotes} alt="Quotes" width={30} height={30} />
                 </div>
                 <p className="text-text2 almarai-regular text-xs sm:text-base w-full">
                   {text}
