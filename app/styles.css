@@ -172,6 +172,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.distinations-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/distinations-bg.jpg");
+  height: 50vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .projects-bg {
   /* background-image: url("../public/projects-bg.svg"); */
@@ -238,3 +245,28 @@
   background-position: center;
   background-repeat: no-repeat;
 } */
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.scroll-container {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.flag-wave {
+  border-radius: 4px; /* Slightly rounded corners for flags */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  animation: wave 1.5s infinite ease-in-out; /* Apply waving animation */
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(-2deg) translateY(0); /* Slight tilt and no vertical movement */
+  }
+  50% {
+    transform: rotate(2deg) translateY(-4px); /* Tilt the other way and move up */
+  }
+}
+

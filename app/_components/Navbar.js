@@ -20,11 +20,16 @@ const links = [
   },
   {
     id: 2,
+    path: "/distinations",
+    text: "وجهاتنا",
+  },
+  {
+    id: 3,
     path: "/projects",
     text: "مشاريعنا",
   },
   {
-    id: 3,
+    id: 4,
     path: "/",
     text: "الرئيسية",
   },
