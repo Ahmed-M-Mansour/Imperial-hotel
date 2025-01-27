@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
+
 import Logo from "@/public/f-logo.svg";
 import fLocation from "@/public/f-location.svg";
 import fContacts from "@/public/f-contacts.svg";
@@ -6,7 +8,6 @@ import fEmail from "@/public/f-email.svg";
 import fFacebook from "@/public/f-facebook.svg";
 import fInstagram from "@/public/f-instagram.svg";
 import fLinkedin from "@/public/f-linkedin.svg";
-import Link from "next/link";
 
 function Footer() {
   return (
@@ -40,45 +41,45 @@ function Footer() {
       <div className="col-span-4">
         <div className="flex flex-col gap-2 justify-around w-full">
           <div className="flex flex-col items-center justify-center text-right">
-            <h3 className="font-almarai font-extrabold text-lg leading-10 text-text1">
+            <Link href="/projects" className="font-almarai font-extrabold text-lg leading-10 text-text1">
               {" "}
               شركائنا{" "}
-            </h3>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link href="/projects/misr" className="font-almarai font-normal text-sm text-text2">
               {" "}
               مصر{" "}
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link href="/projects/saudi" className="font-almarai font-normal text-sm text-text2">
               {" "}
               المملكة العربية السعودية{" "}
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link href="/projects/england" className="font-almarai font-normal text-sm text-text2">
               {" "}
               المملكة المتحدة{" "}
-            </h6>
+            </Link>
           </div>
           <div className="flex flex-col items-center justify-center text-right">
             <h3 className=" font-almarai font-extrabold text-lg leading-10 text-text1">
               روابط مفيدة{" "}
             </h3>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            <Link href="/about" className="font-almarai font-normal text-sm text-text2">
               {" "}
               معلومات عنا
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link href="/projects" className="font-almarai font-normal text-sm text-text2">
               {" "}
               شركائنا{" "}
-            </h6>
-            <h6 className=" font-almarai font-normal text-sm text-text2">
+            </Link>
+            <Link href="/contacts" className="font-almarai font-normal text-sm text-text2">
               {" "}
               تواصل معنا{" "}
-            </h6>
+            </Link>
           </div>
         </div>
       </div>
       <div className="col-span-4 flex items-center justify-center sm:items-end flex-col gap-y-3 mt-3 lg:mr-16">
         <div className="flex items-center space-x-2">
-          <h5 className=" font-almarai font-normal text-sm">
+          <h5 className="font-almarai font-normal text-sm">
             مصر: حدائق الاهرام - الجيزة
           </h5>
           <span>
@@ -94,7 +95,7 @@ function Footer() {
           </span>
         </div>
         <div className="flex items-center space-x-2">
-          <h5 className=" font-almarai font-normal text-sm">
+          <h5 className="font-almarai font-normal text-sm">
             أتصل بنا: <span className=" font-poppins font-semibold"> +201063679025 </span>
           </h5>
           <span>
@@ -102,15 +103,10 @@ function Footer() {
           </span>
         </div>
         <div className="flex items-center space-x-2">
-          <h5 className=" font-almarai font-normal text-sm">
-            {/* <span className=" font-poppins font-semibold">
-              {" "}
-              info@IMPERIAL.com{" "}
-            </span>{" "} */}
+          <h5 className="font-almarai font-normal text-sm">
             <span className="font-poppins font-semibold">
               info@imperialhost.co
             </span> : البريد
-            
           </h5>
           <span>
             <Image alt="icon" src={fEmail} width={20} height={20} />
